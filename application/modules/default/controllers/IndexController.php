@@ -36,7 +36,7 @@ class IndexController extends Zend_Controller_Action
     	$params = $request->getParams();
     	
     	$form = new Application_Form_Sites();
-    	$form->getElement('sites')->setMultiOptions($form->sites('http://wt.wutmarc.com'));
+    	$form->getElement('sites')->setMultiOptions($form->sites('http://nfm.wutmarc.com'));
     	$form->getElement('sites')->setAttrib(array('class'=>'sites'));
     	
     	$this->view->form = $form;
