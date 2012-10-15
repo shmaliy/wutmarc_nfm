@@ -36,7 +36,7 @@ class IndexController extends Zend_Controller_Action
     	$params = $request->getParams();
     	
     	$form = new Application_Form_Sites();
-    	$form->getElement('sites')->setMultiOptions($form->sites('http://nfm.wutmarc.com'));
+    	$form->getElement('sites')->setMultiOptions($form->sites('http://wt.wutmarc.com'));
     	$form->getElement('sites')->setAttrib(array('class'=>'sites'));
     	
     	$this->view->form = $form;
@@ -44,7 +44,31 @@ class IndexController extends Zend_Controller_Action
     
     public function flashPresentationAction()
     {
-    	$this->view->lang = $this->_model->getLang();
+   		$request = $this->getRequest();
+		$params = $request->getParams();
+		//$this->helper->arrayTrans($params);
+		
+				
+		$root = $this->_model->getRootCategoryEntryByAlias($params['cat']);
+		
+		$items = $this->_contentModel->getAreasList(array($root['id']));
+		
+		$this->view->items = array();
+		foreach ($items as $item) {
+			if(!empty($item['images'])) {
+				
+				$imgarray = explode('|', $item['images']);
+				
+				$this->view->items[] = array(
+					'id' => $item['id'],
+					'title' => $item['title'],
+					'cat' => $params['cat'],
+					'image' => $imgarray[0]
+				);
+			
+			}
+		}
+
     }
     
     public function seoAction()

@@ -199,6 +199,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
         $router->addRoute('areas-of-use-index', $route);
         
+        /*  Области применения главная  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/areas_of_use/:id',
+        	array(
+        	   	'module' => 'content',
+        	    'controller' => 'new-index',
+        	    'action'     => 'areas-item',
+        	    'lang' => $lang,
+        	    'alias' => 'areas_of_use'
+        	)
+        );
+        $router->addRoute('areas-of-use-item', $route);
+        
 
         
         
@@ -208,16 +221,55 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         	array(
         		'module' => 'content',
         	    'controller' => 'new-index',
-        	    'action'     => 'reference-index',
+        	    'action'     => 'reference-category',
         	    'lang' => $lang,
         	    'alias' => 'reference'
+        	)
+        );
+        $router->addRoute('reference-category', $route);
+        
+        /*  Формы поставки главная  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/forms-of-supply',
+        	array(
+            	'module' => 'default',
+                'controller' => 'index',
+                'action'     => 'index',
+                'lang' => $lang,
+                'alias' => 'reference'
+        	)
+        );
+        $router->addRoute('forms-of-supply-category', $route);
+        
+        /*  Формы поставки просмотр  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/forms-of-supply/:id',
+        	array(
+              	'module' => 'default',
+                'controller' => 'index',
+                'action'     => 'index',
+                'lang' => $lang,
+                'alias' => 'reference'
+        	)
+        );
+        $router->addRoute('forms-of-supply-view', $route);
+        
+        /*  Справка главная  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/reference/:cat',
+        	array(
+            	'module' => 'content',
+                'controller' => 'new-index',
+                'action'     => 'reference-index',
+            	'lang' => $lang,
+                'alias' => 'reference'
         	)
         );
         $router->addRoute('reference-index', $route);
         
         /*  Новости элемент  */
         $route = new Zend_Controller_Router_Route(
-        	':lang/reference/:id',
+        	':lang/reference/:cat/:id',
         	array(
                	'module' => 'content',
                 'controller' => 'new-index',
@@ -241,7 +293,32 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
         $router->addRoute('production-index', $route);
         
+        /*  Продукция подкатегория  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/production/:cat_alias/:subcat_alias',
+        	array(
+              	'module' => 'production',
+               	'controller' => 'index',
+                'action'     => 'category',
+                'lang' => $lang,
+                'alias' => 'production'
+        	)
+        );
+        $router->addRoute('production-index-subcat', $route);
         
+        /*  Продукция категория  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/production/:cat_alias',
+        	array(
+               	'module' => 'production',
+            	'controller' => 'index',
+                'action'     => 'category',
+                'lang' => $lang,
+                'alias' => 'production',
+        		'cat-alias' => $cat_alias
+        	)
+        );
+        $router->addRoute('production-index-cat', $route);
         
         
         
