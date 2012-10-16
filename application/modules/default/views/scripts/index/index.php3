@@ -15,8 +15,8 @@
 	</div>
 	<div class="clear"></div>
 	<div class="full-width">
-		<?php echo $this->action('index-categories-widget', 'index', 'production', array(
+		<?php /*echo $this->action('index-categories-widget', 'index', 'production', array(
 			'alias' => 'production'
-		)); ?>
+		));*/ ?>
 	</div>
 </div>
