@@ -112,6 +112,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	    
 	    /*  Области применения главная  */
 	    $route = new Zend_Controller_Router_Route(
+	    	':lang/metall_calculator',
+	    	array(
+	    		'module' => 'default',
+	    	    'controller' => 'index',
+	    		'action'     => 'calculator',
+	    	    'lang' => $lang
+	    	)
+	    );
+	    $router->addRoute('calculator', $route);
+	    
+	    /*  Области применения главная  */
+	    $route = new Zend_Controller_Router_Route(
 	    	':lang/deliveryforms.html',
 	    	array(
 	        	'module' => 'content',

@@ -42,6 +42,11 @@ class IndexController extends Zend_Controller_Action
     	$this->view->form = $form;
     }
     
+    public function calculatorAction()
+    {
+    	
+    }
+    
     public function flashPresentationAction()
     {
    		$request = $this->getRequest();
