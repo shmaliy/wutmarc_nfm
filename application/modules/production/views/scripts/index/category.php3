@@ -23,28 +23,9 @@
 				if (isset($this->sub_cat) && !empty($this->sub_cat)) {
 					echo ' / ' . $this->sub_cat['title'];
 				}
-			?></h1>
+			?>
+		</h1>
 			
-		<?php if(isset($this->subcats_list) && !empty($this->subcats_list)) : ?>
-		<div class="subcategories-container">
-			<div class="plashka-top">
-				<span><?php echo SUBCATEGORIES; ?></span>
-			</div>
-			<div class="subcategories">
-				<ul class="subcategories-list">
-				<?php foreach ($this->subcats_list as $cat) :?>
-					<li>
-						<a href="/<?php echo $this->lang; ?>/<?php echo $this->root['title_alias'];?>/<?php echo $this->category['title_alias'];?>/<?php echo $cat['title_alias'];?>">
-							<span><?php echo $cat['title']; ?></span>
-						</a>
-					</li>
-				<?php endforeach; ?>	
-				</ul>
-			</div>
-			<div class="plashka-bottom"></div>
-		</div>
-		<?php endif; ?>
-		
 		<?php if(isset($this->goods) && !empty($this->goods)) : ?>
 		<div class="goods-container">
 			<div class="goods-header">
@@ -54,7 +35,8 @@
 				<?php foreach ($this->goods as $good) : ?>
 				<tr>
 					<td>
-						<div class="good"><?php echo $good['title']?></div>
+						<div class="good">
+							<a href="/<?php echo $this->lang;?>/<?php echo $this->root['title_alias']; ?>/<?php echo $this->category['title_alias']; ?>/<?php echo $good['title_alias']; ?>"><?php echo $good['title']?></a></div>
 					</td>
 					<td>
 						<?php if (is_file('contents/production/' . $good['file'])) : ?>

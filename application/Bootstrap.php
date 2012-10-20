@@ -83,7 +83,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	    $path = $path['path'];
 	    $path = explode('/', trim($path, '/'));
 	    if(empty($path[0])){
-	    	$lang = 'ru';
+	    	$lang = 'de';
 	    } else {
 	    	$lang = $path[0];
 	    }
@@ -307,11 +307,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         
         /*  Продукция подкатегория  */
         $route = new Zend_Controller_Router_Route(
-        	':lang/production/:cat_alias/:subcat_alias',
+        	':lang/production/:cat_alias/:item_alias',
         	array(
               	'module' => 'production',
                	'controller' => 'index',
-                'action'     => 'category',
+                'action'     => 'item',
                 'lang' => $lang,
                 'alias' => 'production'
         	)

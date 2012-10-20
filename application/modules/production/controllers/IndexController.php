@@ -75,6 +75,32 @@ class Production_IndexController extends Zend_Controller_Action
 		
 	}
 	
+	public function itemAction()
+	{
+		$request = $this->getRequest();
+		$params = $request->getParams();
+		//$this->_help->arrayTrans($params);
+		
+		$rootCategory = $params['module'];
+		$category = $params['cat_alias'];
+		$item = $params['item_alias'];
+		
+		// Получаем инфо о корневой категории
+		$rootCategory = $this->_model->getRootCategoryEntryByAlias($rootCategory);
+		$this->view->root = $rootCategory;
+		//$this->_help->arrayTrans($rootCategory);
+		
+		// Получаем текущую категорию первого уровня
+		$category = $this->_model->getDependedCategoryEntryByParent($category, $rootCategory['id']);
+		$this->view->category = $category;
+		//$this->_help->arrayTrans($category);
+		
+		// Получаем товар
+		$itemEntity = $this->_model->getContentItemInCatByAlias($item, $category['id']);
+		$this->view->item = $itemEntity;
+		//$this->_help->arrayTrans($itemEntity);
+	}
+	
 	public function indexCategoriesWidgetAction()
 	{
 		$request = $this->getRequest();

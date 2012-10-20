@@ -20,6 +20,7 @@ class Menu_IndexController extends Zend_Controller_Action
  		foreach ($items as &$item) {
  			if ($item['title_alias'] == 'production') {
  				$item['childs'] = array();
+ 				$item['link'] = '';
  				$root = $this->_model->getRootCategoryEntryByAlias('production');
  				$tree = $this->_model->prodTree($root['id']);
  				//$this->helper->arrayTrans($tree);
