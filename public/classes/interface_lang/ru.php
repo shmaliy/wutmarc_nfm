@@ -12,3 +12,5 @@ define('PAGES', 'Страницы:');
 
 define('SUBCATEGORIES', 'Подкатегории');
 define('GOODS', 'Товары');
+
+define('BOOK', 'Информационный буклет');

@@ -42,6 +42,20 @@ class IndexController extends Zend_Controller_Action
     	$this->view->form = $form;
     }
     
+    public function downloadBookAction()
+    {
+    	$request = $this->getRequest();
+    	$params = $request->getParams();
+    	//$this->helper->arrayTrans($params);
+    	 
+    	$item = $this->_contentModel->getStaticContentItem($params['book']);
+    	$item['image'] = $this->_image->setImage($item['image'], 'thumbs_200px')->resizeToWidth(200);
+    	//$this->helper->arrayTrans($item);
+    	 
+    	$this->view->item = $item;
+    }
+    
+    
     public function calculatorAction()
     {
     	

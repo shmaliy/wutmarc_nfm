@@ -12,3 +12,5 @@ define('PAGES', 'Page:');
 
 define('SUBCATEGORIES', 'Unterkategorien');
 define('GOODS', 'Waren');
+
+define('BOOK', 'Informationsbroschüre');

@@ -12,3 +12,5 @@ define('PAGES', 'Pages:');
 
 define('SUBCATEGORIES', 'Subcategories');
 define('GOODS', 'Goods');
+
+define('BOOK', 'Information booklet');
