@@ -4,6 +4,7 @@ class IndexController extends Zend_Controller_Action
 {
     private $_model;
     private $_contentModel;
+    private $_image;
     
     public $helper;
 	
@@ -16,6 +17,7 @@ class IndexController extends Zend_Controller_Action
         $ajaxContext = $this->_helper->getHelper('AjaxContext');
        // $ajaxContext->addActionContext('indexnews', 'json');
         $ajaxContext->initContext('json');
+        $this->_image = new My_Image_Image();
 	}
 
     public function indexAction()
