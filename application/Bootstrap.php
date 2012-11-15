@@ -147,7 +147,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
         $router->addRoute('static', $route);
         
-        
+        /*  Контактная информация  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/contacts',
+       		array(
+        	  	'module' => 'content',
+        	    'controller' => 'new-index',
+        	    'action'     => 'contacts',
+        		'lang' => $lang,
+        	   	'cat-alias' => 'contacts'
+        	)
+        );
+        $router->addRoute('contacts', $route);
         
         
         /*  Новости главная  */
@@ -197,6 +208,17 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
         $router->addRoute('ajax-last-ref', $route);
         
+        /*  Ajax support  */
+        $route = new Zend_Controller_Router_Route(
+        	':lang/support',
+        	array(
+        	'module' => 'default',
+        	'controller' => 'index',
+        	'action'     => 'support',
+        	'lang' => $lang
+        	)
+        );
+        $router->addRoute('ajax-support', $route);
         
         /*  Области применения главная  */
         $route = new Zend_Controller_Router_Route(

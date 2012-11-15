@@ -9,10 +9,10 @@
 		<?php echo $this->action('seo', 'index', 'default', array(
 			'alias' => 'seo'
 		)); ?>
+		<?php echo $this->action('index-support', 'index', 'default'); ?>
 	</div>
 	<div class="right">
 		<?php echo $this->action('download-book', 'index', 'default', array('book' => 'info-book')); ?>
-		<?php echo $this->action('last-news', 'new-index', 'content'); ?>
 	</div>
 	<div class="clear"></div>
 	<div class="full-width">

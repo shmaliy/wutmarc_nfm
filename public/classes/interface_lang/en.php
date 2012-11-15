@@ -14,3 +14,17 @@ define('SUBCATEGORIES', 'Subcategories');
 define('GOODS', 'Goods');
 
 define('BOOK', 'Information booklet');
+
+define('CUSTOMER_SUPPORT_TITLE', 'Customer support');
+define('CUSTOMER_SUPPORT_NAME', 'Your name');
+define('CUSTOMER_SUPPORT_PHONE', 'Telephone number');
+define('CUSTOMER_SUPPORT_EMAIL', 'E-mail');
+define('CUSTOMER_SUPPORT_QUESTION', 'Your question');
+define('CUSTOMER_SUPPORT_SEND', 'Send');
+
+define('CUSTOMER_SUPPORT_NAME_IS_EMPTY', 'Please fill in your name');
+define('CUSTOMER_SUPPORT_SUCCESS', 'Message has been sent');
+
+define('CUSTOMER_SUPPORT_INDEX_TITLE', 'Do you have questions?');
+define('CUSTOMER_SUPPORT_INDEX_TEXT', 'You can contact us using the  <a href="/*lang*/contacts">contact details</a> of our company in your own or your nearest country
+or ask a question via <a href="/*lang*/contacts">feedback form</a>.');
