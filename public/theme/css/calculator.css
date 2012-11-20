@@ -60,19 +60,53 @@
 
 #calculator .plashka-body .operand {
 	width:284px;
-	height:258px;
+	height:266px;
 	background:url(/theme/img/calc/operand.png) left top no-repeat;
-	padding:16px 15px;
+	padding:12px 15px;
 }
 
+#calculator .plashka-body .operand .radio {
+	margin:10px 0 0 0;
+}
+
+#calculator .plashka-body .operand .radio .radio_item {
+	float:left;
+	margin:0 10px 0 0;
+}
+
+#calculator .plashka-body .operand .radio label {
+	float:left;
+	margin:0 25px 0 0;
+}
+
+#calculator .plashka-body .operand .radio .product_type_select {
+	margin:5px 0 10px 0;
+}
+
+#calculator .plashka-body .operand .radio .product_type_select span {
+	display:block;
+	font-size:12px;
+	margin:0 0 5px 0;
+}
+
+#calculator .plashka-body .operand .radio .product_type_select select {
+	width:284px;
+}
+
+
 #calculator .plashka-body .operand .select {
-	margin:0 0 10px 0;
+	margin:0 0 5px 0;
+	
 }
 
 #calculator .plashka-body .operand .select span {
 	display:block;
-	font-size:14px;
+	font-size:12px;
 	margin:0 0 5px 0;
+}
+
+#calculator .plashka-body .operand .select select {
+	width:284px;
 }
 
 #calculator .plashka-bottom {
@@ -92,13 +126,13 @@
 
 #calculator .dimentions {
 	width:284px;
-	margin:20px 0 0 0;
+	margin:5px 0 0 0;
 }
 
 #calculator .dimentions .title {
 	color:#2685c3;
 	font-size:16px;
-	margin:0 0 10px 0;
+	margin:0 0 5px 0;
 }
 
 #calculator .dimentions .element {
@@ -110,10 +144,13 @@
 	color:black;
 	font-size:12px;
 	margin:0 10px 0 0;
+	float:left;
+	display:block;
+	width:91px;
 }
 
 #calculator .dimentions .element input {
-	width:180px;
+	width:130px;
 	margin:0 10px 0 0;
 }
 
@@ -122,126 +159,5 @@
 }
 
 
-.form_line {
-	margin:0 auto;
-	padding:0 0 0px 0px;
-	width:284px;
-}
-
-
-/*all*/
-.outtaHere {
-	position:absolute;
-	left:-3000px;
-}
-
-span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .radioArea, .radioAreaChecked {
-	display:inline-block;
-	*display:inline;
-	zoom:1;
-	vertical-align:top;
-	font-size:12px !important;
-}
-
-/*select*/
-.form_line select {
-	width:255px;
-}
-
-label {
-	padding:0 25px 0 0;
-}
-
-.selectArea {
-	margin:0 0 0 10px;
-	position:relative;
-	background:url(/theme/img/calc/select_center.png) repeat-x;
-	
-}
-
-a.selectButton, span.left {
-	height:25px;
-	position:absolute;
-	top:0;
-}
-
-span.left {
-	width:10px;
-	left:-10px;
-	background:url(/theme/img/calc/select_left.png) no-repeat 0;
-}
-
-span.center {
-	line-height:25px;
-	
-}
-
-a.selectButton {
-	width:19px;	
-	right:-19px;
-	background:url(/theme/img/calc/select_right.png) no-repeat 0 0;
-}
-
-/*option*/
-.optionsDivVisible {
-	margin-left:-10px;
-	width:284px !important;
-}
-
-.select-center {
-	padding:0;
-	background:#fff;
-	border:1px solid #ccc;
-	border-top:0;
-}
-
-.select-center ul {
-	margin:0;
-	padding:0;
-}
-
-.select-center a {
-	padding:3px 10px 5px 10px;
-	color:#000;
-	text-decoration:none;
-	font-size:12px;
-	display:block;
-}
-
-.select-center a:hover {
-	color:#000;
-	background:#ece9e9;
-}
-
-.radioArea, .radioAreaChecked, .checkboxArea, .checkboxAreaChecked {
-	margin:2px 5px 0 0;
-	width:11px;
-}
-
-/*checkbox*/
-.checkboxArea, .checkboxAreaChecked {
-	height:11px;
-}
-
-.checkboxArea {
-	background:url(/theme/img/calc/radio-inactive.png) no-repeat;
-}
-
-.checkboxAreaChecked {
-	background:url(/theme/img/calc/radio-active.png) no-repeat;
-}
-
-/*radio*/
-.radioArea, .radioAreaChecked {
-	height:11px;
-}
-
-.radioArea {
-	background:url(/theme/img/calc/radio-inactive.png) no-repeat;
-}
-
-.radioAreaChecked {
-	background:url(/theme/img/calc/radio-active.png) no-repeat;
-}
 
 
