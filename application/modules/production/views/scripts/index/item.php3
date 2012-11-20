@@ -17,9 +17,7 @@
 		</div>
 	</div>
 	<div class="right">
-		<div id="last-news-container">
-			<?php echo $this->action('last-news', 'new-index', 'content'); ?>
-		</div>
+		<?php echo $this->action('calculator', 'index', 'production'); ?>
 	</div>
 	<div class="clear"></div>
 	<div class="full-width">

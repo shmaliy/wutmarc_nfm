@@ -229,3 +229,10 @@ $(document).ready(function(){
 	hoverMaker();
 	prodCategoriesHoverMaker();
 });
+
+
+
+
+
+
+

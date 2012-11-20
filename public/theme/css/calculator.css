@@ -1,0 +1,247 @@
+@CHARSET "UTF-8";
+
+#calculator {
+	width:364px;
+	height:500px;
+}
+
+#calculator .plashka-top {
+	width:364px;
+	height:37px;
+	background:url(/theme/img/calc/plashka-top.png);
+}
+
+#calculator .plashka-top .title {
+	background:url(/theme/img/calc/icon.png) left 7px no-repeat;
+	font-size:24px;
+	color:#fff;
+	margin:0 0 0 25px;
+	padding:4px 0 0 35px;
+	height:33px;
+}
+
+#calculator .plashka-body {
+	width:314px;
+	height:362px;
+	background:#ebebeb;
+	padding:22px 25px 23px 25px;
+}
+
+#calculator .plashka-body .result {
+	width:314px;
+	height:52px;
+	position:relative;
+	margin:0 0 22px 0;
+}
+
+#calculator .plashka-body .result .result-container {
+	width:314px;
+	height:52px;
+	position:absolute;
+	text-align:right;
+	background:url(/theme/img/calc/result-glass.png) left top no-repeat;
+}
+
+#calculator .plashka-body .result .result-container #result {
+	padding:3px 10px 0 0;
+	font-size:40px;
+	color:#585959;
+	display:block;
+	float:right;
+}
+
+#calculator .plashka-body .result .result-container .kg {
+	padding:12px 10px 0 0;
+	font-size:28px;
+	color:#585959;
+	display:block;
+	float:right;
+}
+
+#calculator .plashka-body .operand {
+	width:284px;
+	height:258px;
+	background:url(/theme/img/calc/operand.png) left top no-repeat;
+	padding:16px 15px;
+}
+
+#calculator .plashka-body .operand .select {
+	margin:0 0 10px 0;
+}
+
+#calculator .plashka-body .operand .select span {
+	display:block;
+	font-size:14px;
+	margin:0 0 5px 0;
+}
+
+#calculator .plashka-bottom {
+	width:364px;
+	height:56px;
+	background:url(/theme/img/calc/plashka-bottom.png);
+	text-align:center;
+}
+
+#calculator .plashka-bottom a {
+	display:block;
+	font-size:24px;
+	color:#2685c3;
+	padding:13px 0 0 0;
+}
+
+
+#calculator .dimentions {
+	width:284px;
+	margin:20px 0 0 0;
+}
+
+#calculator .dimentions .title {
+	color:#2685c3;
+	font-size:16px;
+	margin:0 0 10px 0;
+}
+
+#calculator .dimentions .element {
+	width:284px;
+	margin:0 0 5px 0;
+}
+
+#calculator .dimentions .element .title {
+	color:black;
+	font-size:12px;
+	margin:0 10px 0 0;
+}
+
+#calculator .dimentions .element input {
+	width:180px;
+	margin:0 10px 0 0;
+}
+
+#calculator .dimentions .element .dim {
+	
+}
+
+
+.form_line {
+	margin:0 auto;
+	padding:0 0 0px 0px;
+	width:284px;
+}
+
+
+/*all*/
+.outtaHere {
+	position:absolute;
+	left:-3000px;
+}
+
+span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .radioArea, .radioAreaChecked {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	vertical-align:top;
+	font-size:12px !important;
+}
+
+/*select*/
+.form_line select {
+	width:255px;
+}
+
+label {
+	padding:0 25px 0 0;
+}
+
+.selectArea {
+	margin:0 0 0 10px;
+	position:relative;
+	background:url(/theme/img/calc/select_center.png) repeat-x;
+	
+}
+
+a.selectButton, span.left {
+	height:25px;
+	position:absolute;
+	top:0;
+}
+
+span.left {
+	width:10px;
+	left:-10px;
+	background:url(/theme/img/calc/select_left.png) no-repeat 0;
+}
+
+span.center {
+	line-height:25px;
+	
+}
+
+a.selectButton {
+	width:19px;	
+	right:-19px;
+	background:url(/theme/img/calc/select_right.png) no-repeat 0 0;
+}
+
+/*option*/
+.optionsDivVisible {
+	margin-left:-10px;
+	width:284px !important;
+}
+
+.select-center {
+	padding:0;
+	background:#fff;
+	border:1px solid #ccc;
+	border-top:0;
+}
+
+.select-center ul {
+	margin:0;
+	padding:0;
+}
+
+.select-center a {
+	padding:3px 10px 5px 10px;
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+	display:block;
+}
+
+.select-center a:hover {
+	color:#000;
+	background:#ece9e9;
+}
+
+.radioArea, .radioAreaChecked, .checkboxArea, .checkboxAreaChecked {
+	margin:2px 5px 0 0;
+	width:11px;
+}
+
+/*checkbox*/
+.checkboxArea, .checkboxAreaChecked {
+	height:11px;
+}
+
+.checkboxArea {
+	background:url(/theme/img/calc/radio-inactive.png) no-repeat;
+}
+
+.checkboxAreaChecked {
+	background:url(/theme/img/calc/radio-active.png) no-repeat;
+}
+
+/*radio*/
+.radioArea, .radioAreaChecked {
+	height:11px;
+}
+
+.radioArea {
+	background:url(/theme/img/calc/radio-inactive.png) no-repeat;
+}
+
+.radioAreaChecked {
+	background:url(/theme/img/calc/radio-active.png) no-repeat;
+}
+
+

@@ -20,6 +20,11 @@ class Production_IndexController extends Zend_Controller_Action
     	$this->view->title = $root['title'];
 	}
 	
+	public function calculatorAction()
+	{
+		
+	}
+	
 	public function categoryAction()
 	{
 		$request = $this->getRequest();

@@ -51,7 +51,7 @@
 	</div>
 	<div class="right">
 		<div id="last-news-container">
-			<?php echo $this->action('last-news', 'new-index', 'content'); ?>
+			<?php echo $this->action('calculator', 'index', 'production'); ?>
 		</div>
 	</div>
 	<div class="clear"></div>
