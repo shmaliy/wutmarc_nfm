@@ -76,7 +76,7 @@
 
 #calculator .plashka-body .operand .radio label {
 	float:left;
-	margin:0 25px 0 0;
+	margin:0 15px 0 0;
 }
 
 #calculator .plashka-body .operand .radio .product_type_select {
@@ -142,11 +142,12 @@
 
 #calculator .dimentions .element .title {
 	color:black;
-	font-size:12px;
-	margin:0 10px 0 0;
+	font-size:11px;
+	margin:0 8px 0 0;
 	float:left;
 	display:block;
 	width:91px;
+	white-space: nowrap;
 }
 
 #calculator .dimentions .element input {

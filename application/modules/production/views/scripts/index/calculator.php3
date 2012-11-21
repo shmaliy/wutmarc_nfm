@@ -128,7 +128,7 @@ var dimentions = {
 		"circle":		{'diametr':'<?php echo CALCULATOR_SET_DIMENTIONS_DIAMETR; ?>', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'},
 		"square":		{'cross-section':'<?php echo CALCULATOR_SET_DIMENTIONS_CROSS_SECTION; ?>', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'},
 		"hexahedron":	{'cross-section':'<?php echo CALCULATOR_SET_DIMENTIONS_CROSS_SECTION; ?>', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'},
-		"pipe":			{'diametr':'<?php echo CALCULATOR_SET_DIMENTIONS_DIAMETR; ?>', 'wall-thickness':'<?php echo CALCULATOR_SET_DIMENTIONS_WALL_THIKNESS; ?> стенки', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'},
+		"pipe":			{'diametr':'<?php echo CALCULATOR_SET_DIMENTIONS_DIAMETR; ?>', 'wall-thickness':'<?php echo CALCULATOR_SET_DIMENTIONS_WALL_THIKNESS; ?>', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'},
 		"wire":			{'diametr':'<?php echo CALCULATOR_SET_DIMENTIONS_DIAMETR; ?>', 'length':'<?php echo CALCULATOR_SET_DIMENTIONS_LENGTH; ?>'}
 };
 
